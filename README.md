@@ -1,19 +1,14 @@
 # Project Title
+Interactive JavaScript quiz
 
-A brief and clear description of your JavaScript quiz application (e.g., "A multiple-choice quiz application built with vanilla JavaScript, HTML, and CSS that tests users' knowledge of JavaScript fundamentals").
+A brief and clear description of  my JavaScript quiz application (e.g., "A multiple-choice quiz application built with vanilla JavaScript, HTML, and CSS that tests users' knowledge of JavaScript fundamentals").
 
 ## Description
 
-Elaborate on the project's features and goals.
 *   Dynamically generated questions and options.
-*   Timer for each question or the entire quiz.
 *   Score tracking and display of final results.
-*   Storage of high scores using Local Storage.
 *   Responsive design for various devices.
-
-## Deployed Application
-
-You can view the live application on [GitHub Pages](Insert_Deployed_Link_Here).
+*   Flashing buttons for imediate feed back on incorrect and correct question.
 
 ## Getting Started
 
@@ -27,7 +22,7 @@ List any software needed to run the project locally (e.g., a web browser).
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com
+    git clone https://github.com/medinakrisnguielle8576-crypto/krisbjavascriptbasics
     ```
 2.  Navigate to the project directory:
     ```bash
