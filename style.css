@@ -1,0 +1,185 @@
+#quizContainer{
+    display:flexbox;
+    flex-direction:rows;
+    align-items:center;
+    justify-items: center;
+    justify-content:space-evenly ;
+    background-color:black;
+    color:hotpink;
+    width:100%;
+    height:75vh
+    
+}
+#questionText{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100vw;
+    height:100px;
+    align-items:center;
+    justify-items: center;
+    min-height: 200px;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gradient-text{
+    background: linear-gradient(to right, #ff66cc, #9933ff, #00ffff, #0077ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight:bold;
+    display:inline-block;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+    font-size: 4rem;
+    text-align: center;
+    background: linear-gradient(to right, #ff66cc, #9933ff, #00ffff, #0077ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+#intro-text{
+    font-family:  'Times New Roman', Times, serif;
+    font-size:1.5rem;
+    color:lightblue;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+}
+
+
+body{
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color:black;
+    color:white;
+}
+
+#optionContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    width: 100%;
+    height:300px;
+}
+
+#displayScore{
+    background-color:hotpink;
+    margin-top:20px;
+    font-size:1.2rem;
+    font-weight:bold;
+    color:darkblue;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+}
+
+h2{
+
+    display:hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, #ff66cc, #9933ff, #00ffff, #0077ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+#nextBtn{
+    padding:10px;
+    border-radius: 50%;
+    background-color:black;
+    border:5px solid hotpink;
+    font-size:1.2rem;
+    font-weight:bold;
+    color: hotpink;
+    text-shadow: 1px 1px 2px lightblue;
+    cursor:pointer;
+    bottom:0;
+}
+
+#scoreBox{
+    bottom:20px;
+    border-radius: 50%;
+    border:2px solid hotpink;
+    background-color:black;
+    width: 300px;
+    height: 150px;
+    display:flex;
+    flex-direction:column;
+    top:100PX;
+    align-items:center;
+    justify-content:center;
+
+}
+#restartBtn{
+    border-radius: 50%;
+    border:2px solid hotpink;
+    background-color:black;
+    width: 100px;           
+    height: 50px;
+    font-size:1.2rem;
+    font-weight:bold;
+    color: hotpink;
+    text-shadow: 1px 1px 2px lightblue;
+    cursor:pointer; 
+}
+
+#optionContainer button{
+    padding:10px;
+    border-radius: 50%;
+    background-color:black;
+    border:5px solid hotpink;
+    font-size:1.2rem;
+    font-weight:bold;
+    color:#ff66cc;
+    text-shadow: 1px 1px 2px lightblue;
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/*correct, flash*/
+@keyframes flash-green{
+    0%, 100%{
+        background-color: black;
+    }
+    50%{
+        background-color:green;
+        color: white;
+    }
+}
+
+/*incorrect flash*/
+@keyframes flash-red{
+    0%, 100%{
+        background-color: black;
+    }
+    50%{
+        background-color:red;
+        color: white;
+    }
+}
+
+/*flashing effect for correct answer*/
+#optionContainer button.correct.flash{
+    animation: flash-green 0.5s ease-in-out 2;
+}
+
+/*flashing effect for incorrect answer*/
+#optionContainer button.incorrect.flash {
+    animation: flash-red 0.5s ease-in-out 2;
+}
+
+
+
+.hide{
+    display:none;
+}
